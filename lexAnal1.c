@@ -4,8 +4,9 @@
    and tabs, returns 0 for EOF. */
 
 #include <ctype.h>
-
-yylex ()
+#include <stdio.h>
+double   yylval ;  // added to permit compilation
+int yylex ()  // check return type
 {
   int c;
 
@@ -17,7 +18,7 @@ yylex ()
     {
       ungetc (c, stdin);
       scanf ("%lf", &yylval);
-      return NUM;
+    //   return NUM;// commented to see other errors
     }
   /* return end-of-file  */
   if (c == EOF)                            
