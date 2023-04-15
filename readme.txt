@@ -4,4 +4,5 @@ http://web.mit.edu/gnu/doc/html/bison_5.html
 
 https://github.com/vyvee/ndom-cardinal-number/fork
 
+elaborate => build with Geany  on I1501
 
